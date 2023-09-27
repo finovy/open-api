@@ -1,0 +1,36 @@
+# Access Token Security
+
+#### 1. `获取口令`
+
+**Path**
+
+`POST` `https://stg-client.xuandashi.com/v1/auth/getToken`
+
+**Request paramerter**
+
+| Parameter | Description       | Required | Type   | Location |
+| --------- | ----------------- | -------- | ------ | -------- |
+| uuid      | UUID              | YES      | string | body     |
+| secret    | appSecret认证密钥 | YES      | string | body     |
+| nonce     |                   | YES      | string | body     |
+| timeMap   |                   | YES      | string | body     |
+
+**Responses Example**
+
+```json
+{
+    "code":0,
+    "data":"4vL4rcNGNcgx5v0RLCcFew",
+    "msg":"success"
+}
+```
+
+| Responses Parameter | Description                                                  | Type   |
+| :------------------ | :----------------------------------------------------------- | ------ |
+| data                | token，请求其他接口必须携带该token进行身份认证，token有效时间为30分钟 | String |
+
+**code**
+
+| 错误码 | 错误描述 |
+| ------ | -------- |
+| 1001   | 权限不足 |
