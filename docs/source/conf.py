@@ -36,7 +36,7 @@ github_doc_root = 'https://github.com/rtfd/recommonmark/tree/master/doc/'
 
 # -- Project information -----------------------------------------------------
 
-project = 'pve_open_api'
+project = 'finovy-open-api'
 copyright = f'2019–{datetime.now().year}, Finovy'
 author = 'Finovy'
 version = get_version_string()
