@@ -3,8 +3,9 @@
    :glob:
    :caption: Table of contents:
 
-   api/1.project_overview
-   api/2.access_token_security
-   api/3.virtual_machine
-   api/4.ai
-   api/5.frequently_asked_questions
+   api/1.接入指南
+   api/2.公共参数
+   api/3.接口鉴权
+   api/4.主机租赁接口
+   api/5.ai
+   api/6.常见问题
