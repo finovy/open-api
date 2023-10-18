@@ -6,7 +6,7 @@
 
 ​		  接入流程图参考:
 
-​			![api_process](../image/api_process.png)
+​			![api_process](../../image/api_process.png)
 
 - 步骤一:根据接入指南完成账号配置获取到调用的token
 - 步骤二:查询主机和镜像的信息获取到imageId和packageId
@@ -112,9 +112,9 @@ class Main{
             "cpuNumber": 4,
             "bandWidth": 30,
             "type": "ceph",
-            "pve_machine_type": "1",
+            "pveMachineType": "1",
             "area": "0",
-            "use_type": "2",
+            "useType": "2",
             "discount": 1.00
         }
     ],
@@ -130,7 +130,7 @@ class Main{
 | gpuNumber           | GPU数，为0则不支持使用显卡                  | int    |
 | gpuName             | GPU名，为空则不支持使用显卡                  | string    |
 | memoryNumber        | 内存数                              | int    |
-| rigid_disk_number   | 硬盘数                              | int    |
+| rigidDiskNumber   | 硬盘数                              | int    |
 | cpuNumber           | cpu数                             | int    |
 | band_width          | 带宽                               | int    |
 | amount              | 金额(单价/小时)                        | string |
@@ -494,6 +494,7 @@ class Main{
 | rigidDisk           | 硬盘数                                               | int    |
 | operatingSystem     | 操作系统（Windows,Windows Server,Ubuntu Server,Debian） | string |
 | hostAccount         | 用户名（登录用户名）                                        | string |
+| hostPw         | 密码                                                | string |
 | address             | 主机连接地址                                            | string |
 | port                | 主机连接端口                                            | int    |
 | pveMachineType      | 主机使用范围，用途（0：普通办公、1：图像处理、2：算法区域）                   | string |
@@ -599,24 +600,25 @@ class Main{
 }
 ```
 
-| Responses Parameter | Description                                       | Type   |
-|:--------------------|:--------------------------------------------------| ------ |
-| id                  | 主机ID                                              | string |
-| name                | 主机名称                                              | string |
-| gpuConfiguration    | GPU配置                                             | string |
-| gpuNumber           | GPU数量                                             | int    |
-| memory              | 内存数                                               | int    |
-| cpu                 | cpu核数                                             | int    |
-| rigidDisk           | 硬盘数                                               | int    |
-| operatingSystem     | 操作系统（Windows,Windows Server,Ubuntu Server,Debian） | string |
-| hostAccount         | 用户名（登录用户名）                                        | string |
-| address             | 主机连接地址                                            | string |
-| port                | 主机连接端口                                            | int    |
-| pveMachineType      | 主机使用范围，用途（0：普通办公、1：图像处理、2：算法区域）                   | string |
-| createTime          | 主机创建时间                                            | long   |
-| expirationTime      | 主机到期时间，有可能为空                                      | long   |
-| useType             | 主机类型（0按量，1包时段）                                    | string |
-| status              | 主机状态0已关机 1关机中 2已开机 3扣费中 4关机中 5已过期                      | string |
+| Responses Parameter     | Description                                       | Type   |
+|:------------------------|:--------------------------------------------------| ------ |
+| id                      | 主机ID                                              | string |
+| name                    | 主机名称                                              | string |
+| gpuConfiguration        | GPU配置                                             | string |
+| gpuNumber               | GPU数量                                             | int    |
+| memory                  | 内存数                                               | int    |
+| cpu                     | cpu核数                                             | int    |
+| rigidDisk               | 硬盘数                                               | int    |
+| operatingSystem         | 操作系统（Windows,Windows Server,Ubuntu Server,Debian） | string |
+| hostAccount             | 用户名（登录用户名）                                        | string |
+| address                 | 主机连接地址                                            | string |
+| port                    | 主机连接端口                                            | int    |
+| pveMachineType          | 主机使用范围，用途（0：普通办公、1：图像处理、2：算法区域）                   | string |
+| createTime              | 主机创建时间                                            | long   |
+| expirationTime          | 主机到期时间，有可能为空                                      | long   |
+| useType                 | 主机类型（0按量，1包时段）                                    | string |
+| status                  | 主机状态0已关机 1关机中 2已开机 3扣费中 4关机中 5已过期                 | string |
+| totalCounts             | 主机总数                                              | string |
 
 **Java Request sample**
 ```java

@@ -1,5 +1,5 @@
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :glob:
    :caption: Table of contents:
 
@@ -7,8 +7,7 @@
    api/2.规范说明
    api/3.公共参数
    api/4.响应返回码
-   api/5.接口鉴权
-   api/6.主机租赁接口
-   api/7.相关名词
-   api/8.常见问题
-   api/9.更新日志
+   api/module/*
+   api/5.相关名词
+   api/6.常见问题
+   api/7.更新日志
