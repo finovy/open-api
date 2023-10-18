@@ -1,0 +1,85 @@
+接口鉴权
+========
+
+1. 鉴权
+   ^^^^^^^
+
+**Path**
+
+``POST`` ``v1/auth/getToken``
+
+**Request paramerter**
+
+========= ================= ======== ====== ========
+Parameter Description       Required Type   Location
+========= ================= ======== ====== ========
+uuid      UUID              yes      string body
+secret    appSecret认证密钥 yes      string body
+========= ================= ======== ====== ========
+
+**Responses Example**
+
+.. code:: json
+
+{
+"code":0,
+"data":{
+"token":"4vL4rcNGNcgx5v0RLCcFew",
+"effectiveTime":1800000
+},
+"msg":"success",
+"traceId":"xxxxxxxxxxxxxx"
+}
+
++---------------+-------------------------------------------------+----+
+| Responses     | Description                                     | Ty |
+| Parameter     |                                                 | pe |
++===============+=================================================+====+
+| token         | Finovy-Access                                   | st |
+|               | -Token，请求其他接口必须携带该token进行身份认证 | ri |
+|               |                                                 | ng |
++---------------+-------------------------------------------------+----+
+| effectiveTime | 有效时长，单位：毫秒                            | lo |
+|               |                                                 | ng |
++---------------+-------------------------------------------------+----+
+
+**code**
+
+====== ======== ==========================
+错误码 错误描述 解决方案
+====== ======== ==========================
+1001   权限不足 请检查uuid和secret是否正确
+====== ======== ==========================
+
+**Java Request sample**
+
+.. code:: java
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.Scanner;
+class Main{
+public static void main(String[] args) throws IOException {
+URL url = new URL("https://client.xuandashi.com/v1/auth/getToken");
+HttpURLConnection httpConn = (HttpURLConnection) url.openConnection();
+httpConn.setRequestMethod("POST");
+
+           httpConn.setRequestProperty("Content-Type", "application/json");
+
+           httpConn.setDoOutput(true);
+           OutputStreamWriter writer = new OutputStreamWriter(httpConn.getOutputStream());
+           writer.write("{\"uuid\": \"B94230045\", \"secret\": \"7vIhzkQLKy/w8U9aLvE87foLBhz5LCp622WIoIvDbB4\"}");
+           writer.flush();
+           writer.close();
+           httpConn.getOutputStream().close();
+
+           InputStream responseStream = httpConn.getResponseCode() / 100 == 2
+                   ? httpConn.getInputStream()
+                   : httpConn.getErrorStream();
+           Scanner s = new Scanner(responseStream).useDelimiter("\\A");
+           String response = s.hasNext() ? s.next() : "";
+           System.out.println(response);
+       }
+}
