@@ -3,6 +3,6 @@
    :glob:
    :caption: Table of contents:
 
-   api/common/*
+   api/commonmodule/*
    api/apimodule/*
    api/常见问题
