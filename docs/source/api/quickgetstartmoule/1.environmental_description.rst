@@ -2,6 +2,7 @@
 环境说明
 ====================
 我们提供两个环境接入。
+
 - 沙盒环境：专门用来测试联调的环境。请求地址为：https://client-sandbox.xuandashi.com
 
 - 正式环境：用户正式使用的环境。请求地址为：https://client.xuandashi.com
