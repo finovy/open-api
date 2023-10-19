@@ -1,7 +1,6 @@
 ====================
-接口
+接口总览
 ====================
-finovy-open-api
 
 
 
@@ -10,4 +9,4 @@ finovy-open-api
    :maxdepth: 1
    :glob:
 
-   ../businessapi/*
+   ../pveapioverview/*
