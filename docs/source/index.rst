@@ -1,7 +1,7 @@
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 1
    :glob:
-   :caption: Table of contents:
+   :caption: Finovy Open Api contents:
 
    api/commonmodule/*
    api/apimodule/*
