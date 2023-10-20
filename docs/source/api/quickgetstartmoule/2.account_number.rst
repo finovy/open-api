@@ -12,4 +12,4 @@
 - 将对应账户ID通过页面右下角的客服入口提供给在线客服，客服会提供此ID对应的密钥。
 
 
-.. image::  ../image/production_environment.jpg
+.. image::  ../../image/production_environment.jpg
