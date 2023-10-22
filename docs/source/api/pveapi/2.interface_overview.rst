@@ -5,11 +5,11 @@
 
 .. raw:: html
 
-    <table cellpadding="5px">
+    <table cellpadding="5">
 
 .. raw:: html
 
-   <tr>
+   <tr bgcolor=#fef1f3>
 
 .. raw:: html
 
@@ -47,11 +47,11 @@
 
 .. raw:: html
 
-   <tr>
+   <tr bgcolor=#fef1f3>
 
 .. raw:: html
 
-   <td rowspan="9",align="center">
+   <td rowspan="9",align="center",bgcolor=#fef1f3>
 
 主机
 
@@ -67,7 +67,15 @@
 
    <td>
 
-createrent
+.. raw:: html
+
+   <a href="https://finovy-open-api.readthedocs.io/zh_CN/latest/api/pveapioverview/3.createquantity.html">
+
+createquantity
+
+.. raw:: html
+
+   </a>
 
 .. raw:: html
 
@@ -89,13 +97,21 @@ createrent
 
 .. raw:: html
 
-   <tr>
+   <tr bgcolor=#fef1f3>
 
 .. raw:: html
 
    <td>
 
+.. raw:: html
+
+   <a href="https://finovy-open-api.readthedocs.io/zh_CN/latest/api/pveapioverview/4.createrent.html">
+
 createquantity
+
+.. raw:: html
+
+   </a>
 
 .. raw:: html
 
@@ -121,13 +137,21 @@ createquantity
 
 .. raw:: html
 
-   <td rowspan="4",colspan="2",align="center">查询</td>
+   <td rowspan="4",colspan="2",align="center",bgcolor=#fef1f3>查询</td>
 
 .. raw:: html
 
    <td>
 
+.. raw:: html
+
+   <a href="https://finovy-open-api.readthedocs.io/zh_CN/latest/api/pveapioverview/2.package.html">
+
 package
+
+.. raw:: html
+
+   </a>
 
 .. raw:: html
 
@@ -149,13 +173,22 @@ package
 
 .. raw:: html
 
-   <tr>
+   <tr bgcolor=#fef1f3>
 
 .. raw:: html
 
    <td>
 
+
+.. raw:: html
+
+   <a href="https://finovy-open-api.readthedocs.io/zh_CN/latest/api/pveapioverview/1.image.html">
+
 image
+
+.. raw:: html
+
+   </a>
 
 .. raw:: html
 
@@ -183,7 +216,15 @@ image
 
    <td>
 
+.. raw:: html
+
+   <a href="https://finovy-open-api.readthedocs.io/zh_CN/latest/api/pveapioverview/7.pveone.html">
+
 pveone
+
+.. raw:: html
+
+   </a>
 
 .. raw:: html
 
@@ -205,13 +246,21 @@ pveone
 
 .. raw:: html
 
-   <tr>
+   <tr bgcolor=#fef1f3>
 
 .. raw:: html
 
    <td>
 
+.. raw:: html
+
+   <a href="https://finovy-open-api.readthedocs.io/zh_CN/latest/api/pveapioverview/8.pvepage.html">
+
 pvepage
+
+.. raw:: html
+
+   </a>
 
 .. raw:: html
 
@@ -233,17 +282,25 @@ pvepage
 
 .. raw:: html
 
-   <tr>
+   <tr bgcolor=#fef1f3>
 
 .. raw:: html
 
-   <td rowspan="2",colspan="2",align="center">主机操作</td>
+   <td rowspan="2",colspan="2",align="center",bgcolor=#fef1f3>主机操作</td>
 
 .. raw:: html
 
    <td>
 
+.. raw:: html
+
+   <a href="https://finovy-open-api.readthedocs.io/zh_CN/latest/api/pveapioverview/5.operate.html">
+
 operate
+
+.. raw:: html
+
+   </a>
 
 .. raw:: html
 
@@ -271,7 +328,15 @@ operate
 
    <td>
 
+.. raw:: html
+
+   <a href="https://finovy-open-api.readthedocs.io/zh_CN/latest/api/pveapioverview/6.reboot.html">
+
 reboot
+
+.. raw:: html
+
+   </a>
 
 .. raw:: html
 
@@ -293,17 +358,25 @@ reboot
 
 .. raw:: html
 
-   <tr>
+   <tr bgcolor=#fef1f3>
 
 .. raw:: html
 
-   <td rowspan="2",colspan="2">删除</td>
+   <td rowspan="2",colspan="2",,bgcolor=#fef1f3>删除</td>
 
 .. raw:: html
 
    <td>
 
+.. raw:: html
+
+   <a href="https://finovy-open-api.readthedocs.io/zh_CN/latest/api/pveapioverview/9.delete.html">
+
 delete
+
+.. raw:: html
+
+   </a>
 
 .. raw:: html
 
