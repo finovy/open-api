@@ -5,7 +5,7 @@
 
 .. raw:: html
 
-   <table>
+    <table cellpadding="5px">
 
 .. raw:: html
 
@@ -51,7 +51,7 @@
 
 .. raw:: html
 
-   <td rowspan="9">
+   <td rowspan="9",align="center">
 
 主机
 
@@ -61,7 +61,7 @@
 
 .. raw:: html
 
-   <td rowspan="2",colspan="2">创建</td>
+   <td rowspan="2",colspan="2",align="center">创建</td>
 
 .. raw:: html
 
@@ -121,7 +121,7 @@ createquantity
 
 .. raw:: html
 
-   <td rowspan="4",colspan="2">查询</td>
+   <td rowspan="4",colspan="2",align="center">查询</td>
 
 .. raw:: html
 
@@ -237,7 +237,7 @@ pvepage
 
 .. raw:: html
 
-   <td rowspan="2",colspan="2">主机操作</td>
+   <td rowspan="2",colspan="2",align="center">主机操作</td>
 
 .. raw:: html
 
