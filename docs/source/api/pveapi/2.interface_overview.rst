@@ -133,11 +133,11 @@ createquantity
 
 .. raw:: html
 
-   <tr>
+   <tr bgcolor=#fef1f3>
 
 .. raw:: html
 
-   <td rowspan="4",colspan="2",align="center",bgcolor=#fef1f3>查询</td>
+   <td rowspan="4",colspan="2",align="center">查询</td>
 
 .. raw:: html
 
@@ -210,7 +210,7 @@ image
 
 .. raw:: html
 
-   <tr>
+   <tr bgcolor=#fef1f3>
 
 .. raw:: html
 
@@ -322,7 +322,7 @@ operate
 
 .. raw:: html
 
-   <tr>
+   <tr bgcolor=#fef1f3>
 
 .. raw:: html
 
