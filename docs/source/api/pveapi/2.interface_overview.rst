@@ -107,7 +107,7 @@ createquantity
 
    <a href="https://finovy-open-api.readthedocs.io/zh_CN/latest/api/pveapioverview/4.createrent.html">
 
-createquantity
+createrent
 
 .. raw:: html
 
@@ -402,7 +402,7 @@ delete
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 0
    :glob:
 
    ../pveapioverview/*
