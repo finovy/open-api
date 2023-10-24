@@ -5,7 +5,7 @@
 
 操作步骤如下：
 
-- 通过沙盒或正式环境的`客户端 <https://client.xuandashi.com/>`_ 域名注册并登录。
+- 通过沙盒或正式环境的 `客户端 <https://client.xuandashi.com/>`_ 域名注册并登录。
 
 - 在个人中心>账号信息页面，获取账户ID。
 
